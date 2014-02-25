@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mangentic-Field-Samples</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_location">Location Id</string>
+    <string name="edit_direction">Direction</string>
+    <string name="button_record">Record</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_record_samples">RecordSamples</string>
+    <string name="goBack">New Sample</string>
+    <string name="Chronometer">Chronometer</string>
+    <string name="collect_samples">Collecting Samples</string>
+        
+</resources>
+
