@@ -11,6 +11,10 @@
     <string name="goBack">New Sample</string>
     <string name="Chronometer">Chronometer</string>
     <string name="collect_samples">Collecting Samples</string>
+    <string name="increment">Increase</string>
+    <string name="decrement">Decrease</string>
+    <string name="edit_path">Path ID</string>
+    <string name="sample_time">Sample Time in sec</string>
         
 </resources>
 

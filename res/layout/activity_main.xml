@@ -3,19 +3,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
-    <EditText android:id="@+id/edit_location"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_location" />
-    <EditText android:id="@+id/edit_direction"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_direction" />
-    <Button
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_record" 
-        android:onClick="RecordSamplesMethod"/>
+        android:text="@string/increment" 
+        android:onClick="IncrementMethod"/>
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrement" 
+        android:onClick="DecrementMethod"/>
+
+      <TextView
+          android:id="@+id/location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Location" 
+          />
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+             <EditText android:id="@+id/edit_path"
+    			       android:layout_weight="1"
+        			   android:layout_width="0dp"
+        			   android:layout_height="wrap_content"
+        			   android:hint="@string/edit_path" />
+             
+             <EditText android:id="@+id/edit_direction"
+        			   android:layout_weight="1"
+        			   android:layout_width="0dp"
+        			   android:layout_height="wrap_content"
+        			   android:hint="@string/edit_direction" />
+    	</TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+             <EditText android:id="@+id/sample_time"
+    			       android:layout_weight="1"
+        			   android:layout_width="0dp"
+        			   android:layout_height="wrap_content"
+        			   android:hint="@string/sample_time" />         
+             <Button
+        			   android:layout_width="wrap_content"
+        			   android:layout_height="wrap_content"
+        			   android:text="@string/button_record" 
+        			   android:onClick="RecordSamplesMethod"/>
+        </TableRow>
+    </TableLayout>
  </LinearLayout>
+   
